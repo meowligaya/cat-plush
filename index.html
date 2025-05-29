@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cat Stuffed Toy Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Cat Stuffed Toy Shop</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <div class="cart-icon" tabindex="0" aria-label="Shopping cart with 0 items" role="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-13-2h2l3.6 7.59 1.35-.73-3.45-7H18v-2H7.42l-.94-2H2v2h2l3.6 7z"/></svg>
+        <div class="cart-count" aria-live="polite" aria-atomic="true">0</div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" role="banner" aria-label="Welcome banner with cat stuffed toy image">
+    <h2>Your Destination for Elegant Cat Stuffed Toys</h2>
+    <p>Handcrafted with love and premium materials — a perfect gift for feline admirers and collectors.</p>
+    <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})" aria-label="Shop now and scroll to products section">Shop Now</button>
+  </section>
+
+  <main>
+    <section class="featured-section" aria-label="Featured cat stuffed toys">
+      <h2>Featured Collection</h2>
+      <div class="slider" aria-live="polite" aria-atomic="true">
+        <button class="slider-nav prev" aria-label="Previous featured products" tabindex="0">&#10094;</button>
+        <div class="slider-track">
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="Featured products page 1">
+            <div class="featured-card" tabindex="0">
+              <img src="images/handcrafted-wool.jpg" alt="Handcrafted Wool Cat Doll" class="featured-image" />
+              <div class="featured-name">Handcrafted Wool Cat Doll</div>
+              <div class="featured-price">$29.50</div>
+            </div>
+            <div class="featured-card" tabindex="0">
+              <img src="images/cat-plush.jpg" alt="Classic Plush Cat Toy" class="featured-image" />
+              <div class="featured-name">Classic Plush Cat Toy</div>
+              <div class="featured-price">$24.99</div>
+            </div>
+            <div class="featured-card" tabindex="0">
+              <img src="images/velvet.jpg" alt="Luxury Velvet Cat Stuffed Toy" class="featured-image" />
+              <div class="featured-name">Luxury Velvet Cat Stuffed Toy</div>
+              <div class="featured-price">$39.99</div>
+            </div>
+          </div>
+          <div class="slide" role="group" aria-roledescription="slide" aria-label="Featured products page 2">
+            <div class="featured-card" tabindex="0">
+              <img src="images/miniature.png" alt="Miniature Cat Plush Set" class="featured-image" />
+              <div class="featured-name">Miniature Cat Plush Set</div>
+              <div class="featured-price">$34.75</div>
+            </div>
+            <div class="featured-card" tabindex="0">
+              <img src="images/gray.jpg" alt="Soft Grey Cat Stuffed Toy" class="featured-image" />
+              <div class="featured-name">Soft Grey Cat Stuffed Toy</div>
+              <div class="featured-price">$28.49</div>
+            </div>
+            <div class="featured-card" tabindex="0">
+              <img src="images/sit.jpg" alt="Cute Sitting Cat Plush" class="featured-image" />
+              <div class="featured-name">Cute Sitting Cat Plush</div>
+              <div class="featured-price">$22.99</div>
+            </div>
+          </div>
+        </div>
+        <button class="slider-nav next" aria-label="Next featured products" tabindex="0">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="products" aria-label="Products">
+      <h2 style="text-align:center; margin-bottom: 1.5rem; font-weight: 700;">Our Elegant Cat Stuffed Toys</h2>
+      <div class="products-grid">
+        <article class="product-card" tabindex="0">
+          <img src="images/cat-plush.jpg" alt="Classic Plush Cat Toy" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Classic Plush Cat Toy</h3>
+            <p class="product-price">$24.99</p>
+          </div>
+          <button class="add-to-cart-btn" aria-label="Add Classic Plush Cat Toy to cart">Add to Cart</button>
+        </article>
+
+        <article class="product-card" tabindex="0">
+          <img src="images/handcrafted-wool.jpg" alt="Handcrafted Wool Cat Doll" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Handcrafted Wool Cat Doll</h3>
+            <p class="product-price">$29.50</p>
+          </div>
+          <button class="add-to-cart-btn" aria-label="Add Handcrafted Wool Cat Doll to cart">Add to Cart</button>
+        </article>
+
+        <article class="product-card" tabindex="0">
+          <img src="images/miniature.png" alt="Miniature Cat Plush Set" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Miniature Cat Plush Set</h3>
+            <p class="product-price">$34.75</p>
+          </div>
+          <button class="add-to-cart-btn" aria-label="Add Miniature Cat Plush Set to cart">Add to Cart</button>
+        </article>
+
+        <article class="product-card" tabindex="0">
+          <img src="images/velvet.jpg" alt="Luxury Velvet Cat Stuffed Toy" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Luxury Velvet Cat Stuffed Toy</h3>
+            <p class="product-price">$39.99</p>
+          </div>
+          <button class="add-to-cart-btn" aria-label="Add Luxury Velvet Cat Stuffed Toy to cart">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials-section" aria-label="Customer testimonials">
+      <h2>What Our Customers Say</h2>
+      <div id="testimonial-quotes">
+        <blockquote class="testimonial-quote active">
+          "The plush cat toys are beautifully crafted and so soft! My daughter loves her Classic Plush Cat Toy."
+          <footer class="testimonial-author">– Joy S.</footer>
+        </blockquote>
+        <blockquote class="testimonial-quote">
+          "Exceptional quality and the Wool Cat Doll is just exquisite. Worth every penny!"
+          <footer class="testimonial-author">– Carl Alfred C.</footer>
+        </blockquote>
+        <blockquote class="testimonial-quote">
+          "Fast shipping and amazing customer service. These cat stuffed toys add coziness to my home."
+          <footer class="testimonial-author">– Ligaya C.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="newsletter-section" aria-label="Subscribe to newsletter">
+      <h2>Stay Updated</h2>
+      <p>Subscribe to our newsletter for new arrivals, special offers, and exclusive deals.</p>
+      <form class="newsletter-form" onsubmit="subscribe(event)" aria-describedby="newsletter-response">
+        <input class="newsletter-input" type="email" aria-label="Email address" placeholder="Your email address" required />
+        <button class="newsletter-submit" type="submit">Subscribe</button>
+      </form>
+      <p id="newsletter-response" role="alert" aria-live="polite" style="margin-top:0.75rem; font-weight:bold; color:#b28a74;"></p>
+    </section>
+
+    <section id="about" aria-label="About cat stuffed toy shop" >
+      <h2>About Cat Stuffed Toy Shop</h2>
+      <p>
+        We curate the finest collection of elegant cat stuffed toys made with premium materials and exquisite craftsmanship. Perfect for collectors and feline lovers alike.
+      </p>
+    </section>
+
+    <section id="contact" aria-label="Contact information" >
+      <h2>Contact Us</h2>
+      <p>Questions or special requests? Write to us at <a href="mailto:info@catstuffedtoyshop.com">info@catstuffedtoyshop.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Cat Stuffed Toy Shop. All rights reserved.
+  </footer>
+
+<script>
+  // Featured Products Slider
+  const sliderTrack = document.querySelector('.slider-track');
+  const slides = document.querySelectorAll('.slide');
+  const prevBtn = document.querySelector('.slider-nav.prev');
+  const nextBtn = document.querySelector('.slider-nav.next');
+  let currentIndex = 0;
+  const slidesCount = slides.length;
+
+  function updateSlider() {
+    sliderTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slidesCount) % slidesCount;
+    updateSlider();
+  });
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slidesCount;
+    updateSlider();
+  });
+
+  // Auto-advance slider every 6 seconds
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slidesCount;
+    updateSlider();
+  }, 6000);
+
+  // Testimonials carousel
+  const testimonials = document.querySelectorAll('.testimonial-quote');
+  let testimonialIndex = 0;
+
+  function showTestimonial(index) {
+    testimonials.forEach((t, i) => {
+      t.classList.toggle('active', i === index);
+    });
+  }
+
+  function cycleTestimonials() {
+    testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+    showTestimonial(testimonialIndex);
+  }
+  setInterval(cycleTestimonials, 8000);
+  showTestimonial(testimonialIndex);
+
+  // Newsletter subscription simulation
+  function subscribe(event) {
+    event.preventDefault();
+    const input = event.target.querySelector('input[type="email"]');
+    const response = document.getElementById('newsletter-response');
+    if (input.checkValidity()) {
+      response.textContent = `Thank you for subscribing, ${input.value}!`;
+      input.value = '';
+    } else {
+      response.textContent = 'Please enter a valid email address.';
+    }
+  }
+</script>
+
+</body>
+</html>
+
